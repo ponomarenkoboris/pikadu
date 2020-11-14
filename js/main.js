@@ -34,7 +34,7 @@ const buttonNewPost = document.querySelector('.button-new-post');
 const addPostElem = document.querySelector('.add-post');
 const loginForget = document.querySelector('.login-forget');
 
-// Создаём один объект для работы со всеми объектами БД (ООП)
+// Создаём один объект для работы со всеми объектами БД 
 const setUsers = {
   user: null,
   initUser(handler) {
