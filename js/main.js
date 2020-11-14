@@ -49,7 +49,7 @@ const setUsers = {
   },
   // вход в существующий аккаунт
   logIn(email, password) {
-    if (!regExpValidEmail.test(email)) return alert('email не валиден'); 
+    // if (!regExpValidEmail.test(email)) return alert('email не валиден'); 
 
     firebase.auth().signInWithEmailAndPassword(email, password).catch(err => {
       const errCode = err.code;
@@ -74,7 +74,7 @@ const setUsers = {
   },
   // регистрация 
   signUp(email, password, handler) {
-    if (!regExpValidEmail.test(email)) return alert('email не валиден'); 
+    // if (!regExpValidEmail.test(email)) return alert('email не валиден'); 
 
     if (!email.trim() || !password.trim()) return alert('Введите данные');
 
